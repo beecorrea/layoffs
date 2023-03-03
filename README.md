@@ -2,10 +2,16 @@
 
 ## Running
 ### Container
-At project root, run:
+At the project root, run:
 
 ```bash
-docker build -f Dockerfile -t layoffs-api:latest .
+make image
+make container
+```
+### Binary
+At the project root, run:
 
-docker -p 3000:3000 run layoffs-api:latest
+```bash
+make app
+make run
 ```
