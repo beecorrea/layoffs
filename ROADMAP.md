@@ -4,9 +4,14 @@
 - Community report curation
 - Past layoffs data aggregation & migration.
 - Contact channels for team.
-
+- Patreon tiers.
 ## Ongoing
-- User Interface/Front-end for layoff feed.
+- Version 0 release & deployment
+  - Lambda
+  - RDS
+  - VPC
+  - API Gateway
+  - Cognito/Keycloak/Auth0 + auth microservice
 
 ## Up Next
-- Version 0 release & deployment
+- User Interface/Front-end for layoff feed.
