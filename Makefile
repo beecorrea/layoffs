@@ -1,7 +1,7 @@
 install-deps:
 	go mod tidy
 
-app: cmd/layoffs/main.go
+build: cmd/layoffs/main.go
 	go build -o app cmd/layoffs/main.go
 
 run: build
@@ -23,7 +23,7 @@ image: cmd/layoffs/main.go
 image-clean:
 	docker rmi ${DEFAULT_FULL_IMAGE_NAME}
 
-container: image
+container:
 	docker run \
 					--name ${DEFAULT_CONTAINER_NAME} \
 					-p 3000:3000 \
